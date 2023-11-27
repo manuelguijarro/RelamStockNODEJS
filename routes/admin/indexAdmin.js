@@ -1,19 +1,19 @@
 import Express from 'express';
 
 
-const indexRouter = Express.Router();
+const indexUserRouter = Express.Router();
 
 /* GET home page. */
 
 //¿Se hacen async o no?Buscar esta solucion
-indexRouter.get('/',/*¿async?*/  (req, res) => {
+indexUserRouter.get('/',/*¿async?*/(req, res) => {
   try {
     //Se pasa el objeto para obtener luego sus  
     //propiedades en la vista
-    res.render('index', { title: 'RelamStock' });
+    res.render('admin/indexAdmin', { title: 'RelamStock,Area administrador' });
   } catch (error) {
     throw error;
   }
 });
 
-export { indexRouter };
+export { indexUserRouter }; 
