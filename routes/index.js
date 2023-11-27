@@ -1,7 +1,7 @@
-import Express from 'express';
+import express from 'express';
 
 
-const indexRouter = Express.Router();
+const indexRouter = express.Router();
 
 /* GET home page. */
 

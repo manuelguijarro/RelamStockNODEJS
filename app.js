@@ -1,3 +1,20 @@
+import  { express }  from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+
+
+
+
+
+
+//Necesitamos la variable __dirname para luego 
+//utilizarlo en los set(para que conozca la ruta)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
